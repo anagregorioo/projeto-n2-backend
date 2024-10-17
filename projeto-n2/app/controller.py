@@ -40,7 +40,7 @@ def listar_filmes_vistos():
 @filme_bp.route('/sobre', methods=['GET'])
 def sobre():
     return jsonify({
-        "Aluno": "Carol Gregório",
+        "Aluno": "Ana Carolina Gregório Gonçalves",
         "Projeto": "Servico de Consulta de Filmes com TMDb",
         "Instruções": [
             "Consultar um filme: GET /filmes/consultar?titulo=O titulo desejado",
