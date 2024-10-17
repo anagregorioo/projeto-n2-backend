@@ -1,5 +1,5 @@
 # Projeto n2 Backend
-Aluna: Carol Gregório
+Aluna: Ana Carolina Gregório Gonçalves
 
 ## Sobre
 O projeto consiste em um pesquisador de filmes, tendo uma serie de filmes utilizando a api themoviedb
