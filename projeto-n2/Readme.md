@@ -18,9 +18,13 @@ veja abaixo como usa-los
 
 ## Descrição de rotas
 /filmes/sobre
+
 /filmes/consultar?titulo=titulo desejado
+
 /filmes/vistos (com os metodos get e post)
+
 Corpo do metodo post:
+
                 "URL": "http://localhost:8080/filmes/vistos",
                 "Headers": {
                     "Content-Type": "application/json"
