@@ -1,9 +1,10 @@
 #arquivo para manipular o armazenamento local
+#aqui eu faco algumas operacoes para ler o filme e cadastrar o filme
+#eu tenho um arquivo chamado filmes_vistos.json que armazena os filmes que eu ja vi
 
 import json
 import os
 
-# Caminho do arquivo onde os filmes vistos serão armazenados
 FILE_PATH = 'filmes_vistos.json'
 
 def carregar_filmes_vistos():

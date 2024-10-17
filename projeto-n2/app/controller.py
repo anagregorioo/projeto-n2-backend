@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from app.service import consultar_filme_por_titulo, marcar_filme_como_visto, obter_filmes_vistos
 
-# criando um blueprint para a rota /filmes
+# criando um blueprint para as rotas referentes a /filmes
 filme_bp = Blueprint('filmes', __name__, url_prefix='/filmes')
 
 # consultar filmes
@@ -20,7 +20,7 @@ def consultar_filme():
 @filme_bp.route('/vistos', methods=['POST'])
 def marcar_filme_visto():
     dados = request.get_json()
-    titulo = dados.get('titulo')  # O cliente só precisa enviar o título do filme
+    titulo = dados.get('titulo')  # O usuario só precisa enviar o título do filme
 
     if not titulo:
         return jsonify({'erro': 'Título não informado'}), 400
@@ -36,7 +36,7 @@ def listar_filmes_vistos():
     filmes = obter_filmes_vistos()
     return jsonify(filmes), 200
 
-# Rota /sobre
+# Rota /sobre 
 @filme_bp.route('/sobre', methods=['GET'])
 def sobre():
     return jsonify({
@@ -56,4 +56,3 @@ def sobre():
             "Ver todos os filmes já vistos: GET /filmes/vistos"
         ]
     }), 200
-
