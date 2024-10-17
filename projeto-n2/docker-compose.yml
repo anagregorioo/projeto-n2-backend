@@ -1,0 +1,10 @@
+version: '3'
+services:
+  servico-filmes:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - OMDB_API_KEY=ffae2512  # Chave da API OMDb
+      - FLASK_APP=app
+      - FLASK_ENV=development
